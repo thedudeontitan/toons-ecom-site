@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      fontFamily: {
+        'brice-light': ['Brice Light', 'sans-serif'],
+        'brice-regular': ['Brice Regular', 'sans-serif'],
+        'brice-semibold': ['Brice SemiBold', 'sans-serif'],
+        'brice-black': ['Brice Black', 'sans-serif'],
+      }
+
     },
   },
   plugins: [],
