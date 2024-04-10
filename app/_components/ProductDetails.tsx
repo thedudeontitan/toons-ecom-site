@@ -28,7 +28,7 @@ export default function ProductDetails({ productData, }: { productData: Product;
         </div>
         <div className="flex flex-row gap-4 w-[40vw] justify-between mt-10">
           {productData.images.map((item, index) => (
-            <div onClick={() => setCurrentImage(index)} className="relative h-24 w-32">
+            <div key={index} onClick={() => setCurrentImage(index)} className="relative h-24 w-32">
               <Image
                 src={item}
                 alt="product image"

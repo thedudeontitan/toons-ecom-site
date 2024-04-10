@@ -44,11 +44,11 @@ export default function ProductListing() {
         ))}
       </div>
       <div className='flex flex-row items-center gap-5 mt-10'>
-        <button onClick={() => pageSkip > 0 ? handlePaginationPrev() : ""} className='border-4 border-black rounded-[18px] py-2 px-4'>
+        <button onClick={handlePaginationPrev} className='border-4 border-black rounded-[18px] py-2 px-4'>
           Prev
         </button>
         <p>{pageSkip} - {pageSkip + 12}</p>
-        <button onClick={handlePaginationNext} className='border-4 border-black rounded-[18px] py-2 px-4'>
+        <button onClick={() => pageSkip > 0 ? handlePaginationNext : ""} className='border-4 border-black rounded-[18px] py-2 px-4'>
           Next
         </button>
       </div>
