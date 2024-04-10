@@ -39,8 +39,8 @@ export default function ProductListing() {
       <p className='font-brice-black text-5xl mb-10'>Products</p>
 
       <div className='flex flex-row flex-wrap gap-10'>
-        {products.map((item) => (
-          <Product product={item} />
+        {products.map((item,index) => (
+          <Product key={index} product={item} />
         ))}
       </div>
       <div className='flex flex-row items-center gap-5 mt-10'>
