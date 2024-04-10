@@ -29,9 +29,9 @@ export default function Product({ product }: { product: Product }) {
                 </div>
             </Link>
             <button
-                className="mt-5 border-4 border-black rounded-[12px]"
+                className="mt-5 border-4 border-black rounded-[12px] py-2"
             >
-                Add To Cart
+                Product Details
             </button>
         </div>
     );
