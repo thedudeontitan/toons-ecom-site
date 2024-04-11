@@ -3,7 +3,7 @@ import { Suspense, useEffect, useState } from "react";
 import ProductListing from "./ProductListing";
 import Loading from "../Loading";
 
-export default function ProductContainer() {
+export default function ProductListContainer() {
 
     const [pageSkip, setSkip] = useState<number>(0);
 

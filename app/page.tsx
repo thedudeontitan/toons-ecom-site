@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import React, { Suspense } from 'react'
-import ProductContainer from './_components/ProductContainer';
+import React from 'react'
+import ProductListContainer from './_components/ProductListContainer';
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-        <ProductContainer />
+        <ProductListContainer />
     </div>
   )
 }

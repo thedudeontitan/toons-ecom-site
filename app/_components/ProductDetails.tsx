@@ -5,7 +5,7 @@ import { BsTruck } from "react-icons/bs";
 import { IoBagRemoveOutline } from "react-icons/io5";
 import StarRating from "./StarRating";
 
-export default function ProductDetails({ productData, }: { productData: Product; }) {
+export default function ProductDetails({ productData, }: { productData: Product }) {
 
   const [currentImage, setCurrentImage] = useState<number>(0)
 
