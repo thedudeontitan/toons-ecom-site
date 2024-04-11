@@ -13,9 +13,9 @@ export default function ProductDetails({ productData, }: { productData: Product;
   const rating = productData.rating;
 
   return (
-    <div className="flex flex-row px-20 min-h-screen bg-[#efe7f7]">
-      <div className="flex flex-col mt-20">
-        <div className="relative w-[40vw] h-[25vw]">
+    <div className="flex flex-col lg:flex-row lg:px-20 min-h-screen bg-[#efe7f7]">
+      <div className="flex flex-col mt-20 p-10 lg:p-0">
+        <div className="relative w-[80vw] h-[60vw] lg:w-[40vw] lg:h-[25vw]">
           <Image
             src={productData.images[currentImage]}
             alt="product image"
@@ -25,7 +25,7 @@ export default function ProductDetails({ productData, }: { productData: Product;
             className="border-4 border-black rounded-[25px]"
           />
         </div>
-        <div className="flex flex-row gap-4 w-[40vw] justify-between mt-10">
+        <div className="flex flex-row gap-4 w-[80vw] lg:w-[40vw] justify-between mt-10">
           {productData.images.map((item, index) => (
             <div key={index} onClick={() => setCurrentImage(index)} className="relative h-24 w-32">
               <Image
@@ -41,7 +41,7 @@ export default function ProductDetails({ productData, }: { productData: Product;
 
         </div>
       </div>
-      <div className="mt-12 p-10 font-brice-black flex flex-col gap-5">
+      <div className="lg:mt-12 px-10 lg:p-10 font-brice-black flex flex-col gap-5">
         <div>
           <p className="text-4xl">{productData.title}</p>
           <p className="flex flex-row "><span>{productData.brand}</span></p>
@@ -62,7 +62,7 @@ export default function ProductDetails({ productData, }: { productData: Product;
             <p className="text-3xl"><span className="line-through">${productData.price}</span></p>
         }
 
-        <div className="flex flex-row w-[30vw] gap-10">
+        <div className="flex flex-col lg:flex-row lg:w-[30vw] gap-4 lg:gap-10">
           <button className="border-4 border-black bg-[#d3aeff] px-4 py-2 rounded-[12px] flex-grow">Add To Cart</button>
           <button className="border-4 border-black bg-[#d3aeff] px-4 py-2 rounded-[12px] flex-grow">Buy Now</button>
         </div>
