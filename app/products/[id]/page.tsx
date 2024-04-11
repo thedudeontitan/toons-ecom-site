@@ -11,7 +11,7 @@ const ProductsContainer = async (props: { id: string }) => {
 
 export default async function Product({ params: { id }, }: { params: { id: string }; }) {
     return (
-        <div>
+        <div className="text-black">
             <Suspense fallback={<Loading />}>
                 <ProductsContainer id={id} />
             </Suspense>
