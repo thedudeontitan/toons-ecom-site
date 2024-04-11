@@ -4,7 +4,7 @@ import ProductContainer from './_components/ProductContainer';
 
 export default function Home() {
   return (
-    <div className='min-h-screen flex flex-col bg-[#efe7f7]'>
+    <div className='min-h-screen flex flex-col bg-[#efe7f7] text-black'>
       {/* <div>
         <Image src="/giphy2.gif" alt='' fill style={{objectFit:'contain'}}/>
       </div> */}
