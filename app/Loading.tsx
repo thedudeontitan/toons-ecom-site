@@ -8,7 +8,7 @@ interface LoadingProps {
 
 const Loading: React.FC<LoadingProps> = ({ count }) => {
   return (
-    <div className="flex flex-row flex-wrap gap-10 mt-10 mx-20 border-4 border-black p-10 rounded-[25px]">
+    <div className="flex flex-row flex-wrap gap-10 mt-10 mx-20 ">
       {Array(count)
         .fill(0)
         .map((_,index) => (

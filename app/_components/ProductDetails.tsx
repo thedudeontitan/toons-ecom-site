@@ -8,7 +8,6 @@ import StarRating from "./StarRating";
 export default function ProductDetails({ productData, }: { productData: Product; }) {
 
   const [currentImage, setCurrentImage] = useState<number>(0)
-  console.log(productData)
 
   const maxRating = 5;
   const rating = productData.rating;

@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import React, { Suspense } from 'react'
-import ProductListing from './_components/ProductListing'
-import Loading from './Loading'
-import getProducts from './_libs/getProducts';
+import ProductContainer from './_components/ProductContainer';
 
 export default function Home() {
   return (
@@ -33,9 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Suspense fallback={<Loading count={12} />}>
-        <ProductListing />
-      </Suspense>
+        <ProductContainer />
     </div>
   )
 }
