@@ -22,7 +22,7 @@ const ProductListing = async ({ skip }: { skip: number }) => {
       }
     }
     fetchData()
-  }, [])
+  }, [skip])
   
   return (
     <div>
