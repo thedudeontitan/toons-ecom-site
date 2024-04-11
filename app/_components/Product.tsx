@@ -27,12 +27,12 @@ export default function Product({ product }: { product: Product }) {
                         <p className="truncate w-52 font-brice-regular">{product.description}</p>
                     </div>
                 </div>
+                <button
+                    className="mt-5 border-4 border-black rounded-[12px] py-2 w-full"
+                >
+                    Product Details
+                </button>
             </Link>
-            <button
-                className="mt-5 border-4 border-black rounded-[12px] py-2"
-            >
-                Product Details
-            </button>
         </div>
     );
 }
